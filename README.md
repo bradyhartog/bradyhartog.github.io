@@ -1,1 +1,0 @@
-# bradyhartog.github.io
