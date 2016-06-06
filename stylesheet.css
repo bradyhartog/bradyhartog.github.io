@@ -1,0 +1,27 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:300,100);
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+#text {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+#hello {
+    color: #202020;
+    font-size: 6vw;
+    font-weight: 100;
+    text-align: center;
+    line-height: 0;
+}
+
+#message {
+    color: #a0a0a0;
+    font-size:1.2vw;
+    font-weight: 300;
+    text-align: center;
+}
