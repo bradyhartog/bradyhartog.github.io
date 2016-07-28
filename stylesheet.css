@@ -3,169 +3,168 @@
 
 /* M O B I L E */
 
-@media (min-resolution: 326dpi) and (min-width: 640px) {
-    body {
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
-    }
-
-    p {
-        margin: 0;
-    }
-
-    div {
-        line-height: 0;
-    }
-    
-    #cover-mobile {
-        display: block;
-        width: 100%;
-    }
-    
-    #cover-desktop {
-        display: none;
-    }
-    
-    #about {
-        display: block;
-        width: 100%;
-        height: 135vw;
-        background: linear-gradient(0deg, #DBDBDB, #ffffff)
-    }
-    
-    #about-graphic {
-        display: block;
-        width: 90%;
-        margin: 0 0 0 5%;
-    }
-    
-    #intro {
-        line-height: 1.62;
-        width: 85%;
-        margin: 7.5% 0 0 7.5%;
-        font-family: Roboto, sans-serif;
-        font-weight: 300;
-        font-size: 3.8vw;
-        text-align: center;
-    }
-    
-    #dot-stop {
-        width: 20%;
-        margin: 4%
-    }
-    
-    #icons {
-        margin: 7.5% 0 0 0;
-        text-align: center;
-    }
-    
-    #instagram {
-        display: inline;
-        width: 10%;
-    }
-    
-    #instagram:hover {
-        opacity: 0.75;
-    }
-    
-    #facebook {
-        display: inline;
-        width: 9.25%;
-        margin-bottom: 0.375vw;
-        margin-left: 6.2vw;
-        margin-right: 5.2vw;
-    }
-    
-    #facebook:hover {
-        opacity: 0.75;
-    }
-    
-    #email {
-        display: inline;
-        width: 12%;
-        margin-bottom: 1.5vw
-    }
-    
-    #email:hover {
-        opacity: 0.75;
-    }
-    
-    #address {
-        display: block;
-        margin: 6.2vw;
-        font-family: Roboto, sans-serif;
-        font-weight: 500;
-        font-size: 3.8vw;
-    }
-    
-    #gallery {
-        display: block;
-        width: 100%;
-    }
-    
-    .design {
-        display: block;
-        width: 100%;
-        height: 100vw;
-    }
-    
-    .info {
-        display: block;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        background-color: #ffffff;
-    }
-    
-    .title {
-        position: relative;
-        top: 4%;
-        line-height: 1.62;
-        font-family: Roboto, sans-serif;
-        font-weight: 500;
-        font-size: 8vw;
-        width: 90%;
-        margin: 0 0 0 5%;
-    }
-    
-    .description {
-        position: relative;
-        top: 4%;
-        line-height: 1.62;
-        font-family: Roboto, sans-serif;
-        font-weight: 300;
-        font-size: 3.8vw;
-        width: 90%;
-        margin: 0 0 0 5%;
-    }
-    
-    #d1 {
-        display: block;
-        position: absolute;
-        top: 812.78vw;
-        width: 100%;
-    }
-    
-    #d1:active {
-        visibility: hidden;
-    }
-    
-    #copyright {
-        display: block;
-        width: 100%;
-        height: 10vw;
-        background-color: #ffffff;
-    }
-
-    #copyright p {
-        position: relative;
-        font-family: Roboto, sans-serif;
-        font-weight: 300;
-        font-size: 3.8vw;
-        text-align: center;
-        top: 50%;
-        }
+body {
+    padding: 0 0 0 0;
+    margin: 0 0 0 0;
 }
+
+p {
+    margin: 0;
+}
+
+div {
+    line-height: 0;
+}
+
+#cover-mobile {
+    display: block;
+    width: 100%;
+}
+
+#cover-desktop {
+    display: none;
+}
+
+#about {
+    display: block;
+    width: 100%;
+    height: 135vw;
+    background: linear-gradient(0deg, #DBDBDB, #ffffff)
+}
+
+#about-graphic {
+    display: block;
+    width: 90%;
+    margin: 0 0 0 5%;
+}
+
+#intro {
+    line-height: 1.62;
+    width: 85%;
+    margin: 7.5% 0 0 7.5%;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 3.8vw;
+    text-align: center;
+}
+
+#dot-stop {
+    width: 20%;
+    margin: 4%
+}
+
+#icons {
+    margin: 7.5% 0 0 0;
+    text-align: center;
+}
+
+#instagram {
+    display: inline;
+    width: 10%;
+}
+
+#instagram:hover {
+    opacity: 0.75;
+}
+
+#facebook {
+    display: inline;
+    width: 9.25%;
+    margin-bottom: 0.375vw;
+    margin-left: 6.2vw;
+    margin-right: 5.2vw;
+}
+
+#facebook:hover {
+    opacity: 0.75;
+}
+
+#email {
+    display: inline;
+    width: 12%;
+    margin-bottom: 1.5vw
+}
+
+#email:hover {
+    opacity: 0.75;
+}
+
+#address {
+    display: block;
+    margin: 6.2vw;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 3.8vw;
+}
+
+#gallery {
+    display: block;
+    width: 100%;
+}
+
+.design {
+    display: block;
+    width: 100%;
+    height: 100vw;
+}
+
+.info {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+}
+
+.title {
+    position: relative;
+    top: 4%;
+    line-height: 1.62;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 8vw;
+    width: 90%;
+    margin: 0 0 0 5%;
+}
+
+.description {
+    position: relative;
+    top: 4%;
+    line-height: 1.62;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 3.8vw;
+    width: 90%;
+    margin: 0 0 0 5%;
+}
+
+#d1 {
+    display: block;
+    position: absolute;
+    top: 812.78vw;
+    width: 100%;
+}
+
+#d1:active {
+    visibility: hidden;
+}
+
+#copyright {
+    display: block;
+    width: 100%;
+    height: 10vw;
+    background-color: #ffffff;
+}
+
+#copyright p {
+    position: relative;
+    font-family: Roboto, sans-serif;
+    font-weight: 300;
+    font-size: 3.8vw;
+    text-align: center;
+    top: 50%;
+    }
+
 
 
 /* D E S K T O P */ /*
