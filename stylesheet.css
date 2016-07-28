@@ -3,10 +3,7 @@
 
 /* M O B I L E */
 
-@media screen 
-    and (min-device-width : 1080px) 
-    and (max-device-width : 1920px) 
-    and (min-resolution: 401dpi) {
+@media (min-resolution: 326dpi) and (min-width: 640px) {
     body {
         padding: 0 0 0 0;
         margin: 0 0 0 0;
@@ -171,9 +168,9 @@
 }
 
 
-/* D E S K T O P */
+/* D E S K T O P */ 
 
-@media (min-width: 6in) {
+@media (max-resolution: 325dpi) {
     body {
         padding: 0 0 0 0;
         margin: 0 0 0 0;
