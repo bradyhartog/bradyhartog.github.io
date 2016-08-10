@@ -31,6 +31,18 @@
             });
         });
             
+        $(document).ready(function(){
+            $("#d1").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d1").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d1").fadeTo(150, 1);
+            });
+        });
+            
         /*$(document).ready(function(){
             $("#d2").mousedown(function(e){
                 clearTimeout(this.downTimer);
