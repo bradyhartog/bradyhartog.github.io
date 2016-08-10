@@ -5,9 +5,201 @@
         <title>Brady Hartog</title> 
         <link href="https://www.dropbox.com/s/81ntmy2ek6mq3ko/Favicon%203.png?raw=1" rel="icon" type="image/x-icon"/>
         <link rel="apple-touch-icon" href="https://www.dropbox.com/s/m2y9vm9bwoi3xqa/Apple%20Touch%20Icon.png?raw=1">
+        <script src="jquery.js"></script>
         <script>
         document.addEventListener("touchstart", function() {},false);
         </script>
+        <script>
+        /*$(document).ready(function(){
+            $("#d1").mousedown(function(){
+                $("#d1").delay(450).fadeTo(150, 0);
+            });
+            $("#d1").mouseup(function(){
+                $("#d1").fadeTo(150, 1);
+            });
+        });*/
+            
+        $(document).ready(function(){
+            $("#d1").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d1").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d1").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d2").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d2").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d2").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d3").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d3").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d3").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d4").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d4").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d4").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d5").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d5").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d5").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d6").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d6").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d6").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d7").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d7").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d7").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d8").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d8").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d8").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d9").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d9").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d9").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d10").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d10").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d10").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d11").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d11").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d11").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d12").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d12").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d12").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d13").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d13").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d13").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d14").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d14").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d14").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d15").mousedown(function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d15").fadeTo(150, 0);
+                }, 450);
+            }).mouseup(function(e){
+                clearTimeout(this.downTimer);
+                $("#d15").fadeTo(150, 1);
+            });
+        });
+        </script>
+        
     </head> 
     
 <body>
@@ -25,12 +217,21 @@
     </div><!--
  --><div id="gallery">
         <div id="notice"></div><!--
-     --><div class="design" id="d6"></div><!--
-     --><div class="design" id="d5"></div><!--
-     --><div class="design" id="d4"></div><!--
-     --><div class="design" id="d3"></div><!--
-     --><div class="design" id="d2"></div><!--
-     --><div class="design"><div class="info"><p class="title">bradyhartog Brand</p><p class="description">My personal brand. Developed under a strictly minimal vision. The logo takes on a full as well as a condensed form for optimal legibility across a variety of situations. The CMYK color scheme suggests creativity and originality.</p></div><img src="https://www.dropbox.com/s/bpjeeyqzfqbhg40/d1.jpg?raw=1" id="d1"></div>
+     --><div class="design"><div class="info"><p class="title">Lorem Ipsum Posters</p><p class="description">Experimental poster designs. Exploring new ways to be creative every day.</p></div><img src="https://www.dropbox.com/s/tce3pz6vkncdg01/d15.jpg?raw=1" class="design-img" id="d15"></div><!--
+     --><div class="design"><div class="info"><p class="title">Lorem Ipsum Posters</p><p class="description">Experimental poster designs. Exploring new ways to be creative every day.</p></div><img src="https://www.dropbox.com/s/whfjopr1ppv9eau/d14.jpg?raw=1" class="design-img" id="d14"></div><!--
+     --><div class="design"><div class="info"><p class="title">members3 Brand</p><p class="description">Brand developed for the members3 ("Members Cubed: Then, Now, Tomorrow") program. The design is clean, modern, and forward-looking. The cool-end color scheme has a professional attitude and is extremely versatile.</p></div><img src="https://www.dropbox.com/s/1x74vlzxl3rreiw/d13.jpg?raw=1" class="design-img" id="d13"></div><!--
+     --><div class="design"><div class="info"><p class="title">Hillcrest Music Brand</p><p class="description">Brand developed for Hillcrest Music Outreach. The logo was evolved from the intersection between a pair of eighth notes and a paw (to represent a husky, the group's mascot).</p></div><img src="https://www.dropbox.com/s/8g5gw6uhhiyga6m/d12.jpg?raw=1" class="design-img" id="d12"></div><!--
+     --><div class="design"><div class="info"><p class="title">UDMAF Theme</p><p class="description">A theme for the 2016 Utah Digital Media Arts Festival: "design makes the difference." Shown here is the poster.</p></div><img src="https://www.dropbox.com/s/h7af0d6f2pmzrgk/d11.jpg?raw=1" class="design-img" id="d11"></div><!--
+     --><div class="design"><div class="info"><p class="title">UACTE Logo Diagram</p><p class="description">A diagram illustrating how the UACTE 2017 logo was constructed. It provides insight into the theory behind the design as well.</p></div><img src="https://www.dropbox.com/s/m2s0wmko8scpwdn/d10.jpg?raw=1" class="design-img" id="d10"></div><!--
+     --><div class="design"><div class="info"><p class="title">UACTE Conference Art</p><p class="description">Conference artwork created for the 2017 Utah Association for Career and Technical Education annual conference. Shown here is the logo and color scheme, developed from the theme, "Grow Your Own."</p></div><img src="https://www.dropbox.com/s/nfaurqdcyy38auj/d9.jpg?raw=1" class="design-img" id="d9"></div><!--
+     --><div class="design"><div class="info"><p class="title">Vertex Brand</p><p class="description">An experimental brand for the prospective startup Vertex. It features a grayscale color scheme with subtle organic textures and a fully custom logotype.</p></div><img src="https://www.dropbox.com/s/duldux9f4abvdd1/d8.jpg?raw=1" class="design-img" id="d8"></div><!--
+     --><div class="design"><div class="info"><p class="title">DMTD</p><p class="description">A custom type design. The characters are geometric in nature, having been constructed entirely from basic forms. It is made here into a type illustration with the phrase, "Design Makes the Difference."</p></div><img src="https://www.dropbox.com/s/fuy14f74y1dmaao/d7.jpg?raw=1" class="design-img" id="d7"></div><!--
+     --><div class="design"><div class="info"><p class="title">Cloudalize Values</p><p class="description">A poster made to display the company values of Cloudalize. The bold style and dynamic layout create a sense of motion, resulting in a work that is fun and engaging. It reflects the Cloudalize brand in every detail, most notably the color scheme.</p></div><img src="https://www.dropbox.com/s/n8knscdzju94lna/d6.jpg?raw=1" class="design-img" id="d6"></div><!--
+     --><div class="design"><div class="info"><p class="title">Arbor Floor Plan</p><p class="description">A floor plan graphic created for Arbor Event Center. It is a simplified diagram of Arbor's banquet hall with details on space availability according to the event packages offered. While it is optimized to be viewed by potential clients in a digital ecosystem, it may also be used in print.</p></div><img src="https://www.dropbox.com/s/d27tai1ph94debk/d5.jpg?raw=1" class="design-img" id="d5"></div><!--
+     --><div class="design"><div class="info"><p class="title">BMESC Conference Art</p><p class="description">Conference artwork created for the 2016 Utah Business and Marketing Education Summer Conference (BMESC). Shown here is the welcome poster. The color scheme and composition were carefully developed to accurately reflect the theme: "Power of the Past, Force of the Future." The blue/green hues and juxtaposed layout effectively accomplish this.</p></div><img src="https://www.dropbox.com/s/2m306oxj4el6ghl/d4.jpg?raw=1" class="design-img" id="d4"></div><!--
+     --><div class="design"><div class="info"><p class="title">Vanx Icons</p><p class="description">Icons created for Vanx Hockey illustrating new features of their cutting-edge hockey sticks.</p></div><img src="https://www.dropbox.com/s/fzopmjgk7wepsfn/d3.jpg?raw=1" class="design-img" id="d3"></div><!--
+     --><div class="design"><div class="info"><p class="title">bradyhartog Icons</p><p class="description">Hand-drawn icons used as part of my brand to represent various disciplines of design. There is one for each element of the color scheme, helping to create a lasting visual impression.</p></div><img src="https://www.dropbox.com/s/jh9b99449szu5w0/d2.jpg?raw=1" class="design-img" id="d2"></div><!--
+     --><div class="design"><div class="info"><p class="title">bradyhartog Brand</p><p class="description">My personal brand. Developed under a strictly minimal vision. The logo takes on a full as well as a condensed form for optimal legibility across a variety of situations. The CMYK color scheme suggests creativity and originality.</p></div><img src="https://www.dropbox.com/s/bpjeeyqzfqbhg40/d1.jpg?raw=1" class="design-img" id="d1"></div>
     </div><!--
  --><div id="copyright"><p>&#169; 2016 Brady Hartog</p></div>
 
