@@ -10,14 +10,8 @@
         document.addEventListener("touchstart", function() {},false);
         </script>-->
         <script>
-        /*$(document).ready(function(){
-            $("#d1").mousedown(function(){
-                $("#d1").delay(450).fadeTo(150, 0);
-            });
-            $("#d1").mouseup(function(){
-                $("#d1").fadeTo(150, 1);
-            });
-        });*/
+            
+        /* M O B I L E */
             
         $(document).ready(function(){
             $("#d1").bind('touchstart', function(e){
@@ -32,6 +26,176 @@
         });
             
         $(document).ready(function(){
+            $("#d2").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d2").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d2").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d3").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d3").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d3").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d4").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d4").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d4").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d5").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d5").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d5").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d6").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d6").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d6").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d7").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d7").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d7").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d8").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d8").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d8").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d9").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d9").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d9").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d10").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d10").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d10").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d11").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d11").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d11").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d12").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d12").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d12").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d13").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d13").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d13").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d14").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d14").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d14").fadeTo(150, 1);
+            });
+        });
+            
+        $(document).ready(function(){
+            $("#d15").bind('touchstart', function(e){
+                clearTimeout(this.downTimer);
+                this.downTimer = setTimeout(function(){
+                    $("#d15").fadeTo(150, 0);
+                }, 450);
+            }).bind('touchend', function(e){
+                clearTimeout(this.downTimer);
+                $("#d15").fadeTo(150, 1);
+            });
+        });
+            
+        /* D E S K T O P */
+            
+        $(document).ready(function(){
             $("#d1").mousedown(function(e){
                 clearTimeout(this.downTimer);
                 this.downTimer = setTimeout(function(){
@@ -43,7 +207,7 @@
             });
         });
             
-        /*$(document).ready(function(){
+        $(document).ready(function(){
             $("#d2").mousedown(function(e){
                 clearTimeout(this.downTimer);
                 this.downTimer = setTimeout(function(){
@@ -209,17 +373,20 @@
                 clearTimeout(this.downTimer);
                 $("#d15").fadeTo(150, 1);
             });
-        });*/
+        });
         </script>
         
     </head> 
     
 <body>
+    <div id="desktop-notice"><p id="desktop-message-title"><img src="https://www.dropbox.com/s/mzopnfgmjaib7xp/Warning%20Symbol.png?raw=1" id="warning"><br>Desktop Version Under Construction</p>
+        <p id="desktop-message">bradyhartog.com launches for desktop on August 17, 2016.<br>In the meantime, try viewing it on your mobile device.</p></div>
+    <div id="content">
     <img src="https://www.dropbox.com/s/w7869tgt975ic9x/Cover%20Mobile.jpg?raw=1" id="cover-mobile"><!--
  --><img src="https://www.dropbox.com/s/w69hd4qnwydjcul/Cover%20Desktop.jpg?raw=1" id="cover-desktop"><!--
  --><div id="about">
         <img src="https://www.dropbox.com/s/508v0jji8b5p1fr/About%20Img%20Mobile.png?raw=1" id="about-graphic"><!--
-     --><p id="intro">Welcome to the portfolio of Brady Hartog. Brady is a graphic designer with an appetite for challenge and a passion for excellence. When he's not designing, he's probably chowing down sushi or jamming on his synth. <br><img src="https://www.dropbox.com/s/vrb4x2xaodsx35m/Dot%20Stop.png?raw=1" id="dot-stop"><br> Feel free to browse the gallery below and check out my other social outlets. And when you're ready to design something great, don't hesitate to shoot me an email. I look forward to working with you! </p><!--
+     --><p id="intro">Welcome to the portfolio of Brady Hartog.<br>Brady is an experienced graphic designer with an appetite for challenge and a passion for excellence. When he's not designing, he's probably chowing down sushi or jamming on his synth. <br><img src="https://www.dropbox.com/s/vrb4x2xaodsx35m/Dot%20Stop.png?raw=1" id="dot-stop"><br> Feel free to browse the gallery below and check out my other social outlets. And when you're ready to design something great, don't hesitate to shoot me an email. I look forward to working with you! </p><!--
       --><div id="icons">
         <a href="http://www.instagram.com/bradyhartog/" target="_blank"><img src="https://www.dropbox.com/s/30ss9rmxa8glvxs/Instagram.png?raw=1" id="instagram"></a>
         <a href="http://www.facebook.com/bradyhartogdesign/" target="_blank"><img src="https://www.dropbox.com/s/oxlit80wlwlbyro/Facebook.png?raw=1" id="facebook"></a>
@@ -228,9 +395,9 @@
         </div>
     </div><!--
  --><div id="gallery">
-        <div id="notice"></div><!--
-     --><div class="design"><div class="info"><p class="title">Lorem Ipsum Posters</p><p class="description">Experimental poster designs. Exploring new ways to be creative every day.</p></div><img src="https://www.dropbox.com/s/tce3pz6vkncdg01/d15.jpg?raw=1" class="design-img" id="d15"></div><!--
-     --><div class="design"><div class="info"><p class="title">Lorem Ipsum Posters</p><p class="description">Experimental poster designs. Exploring new ways to be creative every day.</p></div><img src="https://www.dropbox.com/s/whfjopr1ppv9eau/d14.jpg?raw=1" class="design-img" id="d14"></div><!--
+        <div id="notice"><p id="notice-message">Tap and hold an item to view its description.</p></div><!--
+     --><div class="design"><div class="info"><p class="title">Lorem Ipsum Posters</p><p class="description">Experimental poster designs.</p></div><img src="https://www.dropbox.com/s/tce3pz6vkncdg01/d15.jpg?raw=1" class="design-img" id="d15"></div><!--
+     --><div class="design"><div class="info"><p class="title">Lorem Ipsum Posters</p><p class="description">Experimental poster designs.</p></div><img src="https://www.dropbox.com/s/whfjopr1ppv9eau/d14.jpg?raw=1" class="design-img" id="d14"></div><!--
      --><div class="design"><div class="info"><p class="title">members3 Brand</p><p class="description">Brand developed for the members3 ("Members Cubed: Then, Now, Tomorrow") program. The design is clean, modern, and forward-looking. The cool-end color scheme has a professional attitude and is extremely versatile.</p></div><img src="https://www.dropbox.com/s/1x74vlzxl3rreiw/d13.jpg?raw=1" class="design-img" id="d13"></div><!--
      --><div class="design"><div class="info"><p class="title">Hillcrest Music Brand</p><p class="description">Brand developed for Hillcrest Music Outreach. The logo was evolved from the intersection between a pair of eighth notes and a paw (to represent a husky, the group's mascot).</p></div><img src="https://www.dropbox.com/s/8g5gw6uhhiyga6m/d12.jpg?raw=1" class="design-img" id="d12"></div><!--
      --><div class="design"><div class="info"><p class="title">UDMAF Theme</p><p class="description">A theme for the 2016 Utah Digital Media Arts Festival: "design makes the difference." Shown here is the poster.</p></div><img src="https://www.dropbox.com/s/h7af0d6f2pmzrgk/d11.jpg?raw=1" class="design-img" id="d11"></div><!--
@@ -246,6 +413,6 @@
      --><div class="design"><div class="info"><p class="title">bradyhartog Brand</p><p class="description">My personal brand. Developed under a strictly minimal vision. The logo takes on a full as well as a condensed form for optimal legibility across a variety of situations. The CMYK color scheme suggests creativity and originality.</p></div><img src="https://www.dropbox.com/s/bpjeeyqzfqbhg40/d1.jpg?raw=1" class="design-img" id="d1"></div>
     </div><!--
  --><div id="copyright"><p>&#169; 2016 Brady Hartog</p></div>
-
+    </div>
 </body> 
 </html>

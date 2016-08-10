@@ -9,6 +9,10 @@
 */
 
 @media screen and (max-aspect-ratio: 1/1) {
+    #desktop-notice {
+        display: none;
+    }
+    
     html {
         -webkit-tap-highlight-color: rgba(0,0,0,0);
     }
@@ -112,6 +116,21 @@
         width: 100%;
     }
     
+    #notice {
+        display: block;
+        height: 15vw;
+    }
+    
+    #notice-message {
+        position: relative;
+        top: 55%;
+        line-height: 1.62;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 3.8vw;
+        text-align: center;
+    }
+    
     .design {
         display: block;
         width: 100%;
@@ -167,63 +186,63 @@
     }
     
     #d1 {
-        top: 1712.78vw;
+        top: 1727.78vw;
     }
     
     #d2 {
-        top: 1612.78vw;
+        top: 1627.78vw;
     }
     
     #d3 {
-        top: 1512.78vw;
+        top: 1527.78vw;
     }
     
     #d4 {
-        top: 1412.78vw;
+        top: 1427.78vw;
     }
     
     #d5 {
-        top: 1312.78vw;
+        top: 1327.78vw;
     }
     
     #d6 {
-        top: 1212.78vw;
+        top: 1227.78vw;
     }
     
     #d7 {
-        top: 1112.78vw;
+        top: 1127.78vw;
     }
     
     #d8 {
-        top: 1012.78vw;
+        top: 1027.78vw;
     }
     
     #d9 {
-        top: 912.78vw;
+        top: 927.78vw;
     }
     
     #d10 {
-        top: 812.78vw;
+        top: 827.78vw;
     }
     
     #d11 {
-        top: 712.78vw;
+        top: 727.78vw;
     }
     
     #d12 {
-        top: 612.78vw;
+        top: 627.78vw;
     }
     
     #d13 {
-        top: 512.78vw;
+        top: 527.78vw;
     }
     
     #d14 {
-        top: 412.78vw;
+        top: 427.78vw;
     }
     
     #d15 {
-        top: 312.78vw;
+        top: 327.78vw;
     }
     
     /*#d1:active {
@@ -257,6 +276,49 @@
 
 @media screen and (min-aspect-ratio: 1/1) {
     body {
+        padding: 0 0 0 0;
+        margin: 0 0 0 0;
+    }
+    
+    #desktop-notice {
+        display: block;
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -65%);
+    }
+    
+    #desktop-message-title {
+        line-height: 1.62;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        color: #202020;
+        font-size: 1.75em;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    #desktop-message {
+        line-height: 1.62;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        color: #202020;
+        font-size: 1em;
+        margin: -22px 0 0 0;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    #warning {
+        width: 108px
+    }
+    
+    #content {
+        display: none;
+    }
+    
+    /*body {
         padding: 0 0 0 0;
         margin: 0 0 0 0;
     }
@@ -327,5 +389,5 @@
         font-size: 1.25vw;
         text-align: center;
         top: 50%;
-        }
+        }*/
 }
