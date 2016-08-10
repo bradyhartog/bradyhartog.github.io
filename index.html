@@ -6,9 +6,9 @@
         <link href="https://www.dropbox.com/s/81ntmy2ek6mq3ko/Favicon%203.png?raw=1" rel="icon" type="image/x-icon"/>
         <link rel="apple-touch-icon" href="https://www.dropbox.com/s/m2y9vm9bwoi3xqa/Apple%20Touch%20Icon.png?raw=1">
         <script src="jquery.js"></script>
-        <script>
+        <!--<script>
         document.addEventListener("touchstart", function() {},false);
-        </script>
+        </script>-->
         <script>
         /*$(document).ready(function(){
             $("#d1").mousedown(function(){
@@ -20,18 +20,18 @@
         });*/
             
         $(document).ready(function(){
-            $("#d1").mousedown(function(e){
+            $("#d1").bind('touchstart', function(e){
                 clearTimeout(this.downTimer);
                 this.downTimer = setTimeout(function(){
                     $("#d1").fadeTo(150, 0);
                 }, 450);
-            }).mouseup(function(e){
+            }).bind('touchend', function(e){
                 clearTimeout(this.downTimer);
                 $("#d1").fadeTo(150, 1);
             });
         });
             
-        $(document).ready(function(){
+        /*$(document).ready(function(){
             $("#d2").mousedown(function(e){
                 clearTimeout(this.downTimer);
                 this.downTimer = setTimeout(function(){
@@ -197,7 +197,7 @@
                 clearTimeout(this.downTimer);
                 $("#d15").fadeTo(150, 1);
             });
-        });
+        });*/
         </script>
         
     </head> 
