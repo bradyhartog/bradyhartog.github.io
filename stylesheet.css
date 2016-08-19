@@ -64,7 +64,7 @@
     
     #dot-stop {
         width: 20%;
-        margin: 4%
+        margin: 4%;
     }
     
     #icons {
@@ -77,10 +77,6 @@
         width: 10%;
     }
     
-    /*#instagram:hover {
-        opacity: 0.75;
-    }*/
-    
     #facebook {
         display: inline;
         width: 9.25%;
@@ -89,19 +85,11 @@
         margin-right: 5.2vw;
     }
     
-    /*#facebook:hover {
-        opacity: 0.75;
-    }*/
-    
     #email {
         display: inline;
         width: 12%;
         margin-bottom: 1.5vw
     }
-    
-    /*#email:hover {
-        opacity: 0.75;
-    }*/
     
     #address {
         display: block;
@@ -121,14 +109,18 @@
         height: 15vw;
     }
     
-    #notice-message {
+    #notice-message-mobile {
         position: relative;
         top: 55%;
         line-height: 1.62;
         font-family: Roboto, sans-serif;
-        font-weight: 300;
+        font-weight: 500;
         font-size: 3.8vw;
         text-align: center;
+    }
+    
+    #notice-message-desktop {
+        display: none;
     }
     
     .design {
@@ -147,12 +139,17 @@
         display: block;
         position: absolute;
         width: 100%;
+        top: 0;
         user-drag: none; 
         user-select: none;
         -moz-user-select: none;
         -webkit-user-drag: none;
         -webkit-user-select: none;
         -ms-user-select: none;
+    }
+    
+    .desktop-trigger {
+        display: none;
     }
     
     .info {
@@ -185,70 +182,6 @@
         margin: 0 0 0 5%;
     }
     
-    #d1 {
-        top: 1727.78vw;
-    }
-    
-    #d2 {
-        top: 1627.78vw;
-    }
-    
-    #d3 {
-        top: 1527.78vw;
-    }
-    
-    #d4 {
-        top: 1427.78vw;
-    }
-    
-    #d5 {
-        top: 1327.78vw;
-    }
-    
-    #d6 {
-        top: 1227.78vw;
-    }
-    
-    #d7 {
-        top: 1127.78vw;
-    }
-    
-    #d8 {
-        top: 1027.78vw;
-    }
-    
-    #d9 {
-        top: 927.78vw;
-    }
-    
-    #d10 {
-        top: 827.78vw;
-    }
-    
-    #d11 {
-        top: 727.78vw;
-    }
-    
-    #d12 {
-        top: 627.78vw;
-    }
-    
-    #d13 {
-        top: 527.78vw;
-    }
-    
-    #d14 {
-        top: 427.78vw;
-    }
-    
-    #d15 {
-        top: 327.78vw;
-    }
-    
-    /*#d1:active {
-        visibility: hidden;
-    }*/
-    
     #copyright {
         display: block;
         width: 100%;
@@ -278,49 +211,7 @@
     body {
         padding: 0 0 0 0;
         margin: 0 0 0 0;
-    }
-    
-    #desktop-notice {
-        display: block;
-        position: absolute;
-        text-align: center;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -65%);
-    }
-    
-    #desktop-message-title {
-        line-height: 1.62;
-        font-family: Roboto, sans-serif;
-        font-weight: 500;
-        color: #202020;
-        font-size: 1.75em;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    
-    #desktop-message {
-        line-height: 1.62;
-        font-family: Roboto, sans-serif;
-        font-weight: 300;
-        color: #202020;
-        font-size: 1em;
-        margin: -22px 0 0 0;
-        white-space: nowrap;
-        overflow: hidden;
-    }
-    
-    #warning {
-        width: 108px
-    }
-    
-    #content {
-        display: none;
-    }
-    
-    /*body {
-        padding: 0 0 0 0;
-        margin: 0 0 0 0;
+        overflow-x: hidden;
     }
 
     p {
@@ -330,55 +221,203 @@
     div {
         line-height: 0;
     }
-
+    
     #cover-mobile {
         display: none;
     }
-
+    
     #cover-desktop {
         display: block;
-        width: 100%;
+        position: relative;
+        height: 100vh;
+        left: 50%;
+        transform: translate(-50%, 0);
     }
 
     #about {
         display: block;
         width: 100%;
-        height: 50vw
+        height: 700px;
+        background: linear-gradient(0deg, #DBDBDB, #ffffff);
     }
     
     #about-graphic {
-        display: inline;
-        width: 30%;
+        display: block;
+        position: relative;
+        width: 640px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        margin: 48px 0 48px 0;
     }
     
     #intro {
         display: block;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
         line-height: 1.62;
-        width: 30%;
+        width: 700px;
         margin: 0;
         font-family: Roboto, sans-serif;
         font-weight: 300;
-        font-size: 1.25vw;
-        text-align: left;
+        font-size: 1.23em;
+        text-align: center;
+    }
+    
+    #dot-stop {
+        height: 1em;
+        margin: 0.7em;
+    }
+    
+    #icons {
+        margin: 44px 0 0 0;
+        text-align: center;
+    }
+    
+    #instagram {
+        display: inline;
+        width: 50px;
+    }
+    
+    #instagram:hover {
+        opacity: 0.75;
+    }
+    
+    #facebook {
+        display: inline;
+        width: 46.25px;
+        margin-bottom: 2.5px;
+        margin-left: 31px;
+        margin-right: 27px;
+    }
+    
+    #facebook:hover {
+        opacity: 0.75;
+    }
+    
+    #email {
+        display: inline;
+        width: 60px;
+        margin-bottom: 7.5px;
+    }
+    
+    #email:hover {
+        opacity: 0.75;
+    }
+    
+    #address {
+        display: block;
+        margin: 32px;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 1.23em;
     }
     
     #gallery {
         display: block;
-        margin: 0 0 0 0;
-        background-color: #ffffff;
+        position: relative;
+        max-width: 1200px;
+        margin: auto;
+        text-align: center;
     }
 
+    #notice {
+        width: 100%;
+        height: 120px;
+        margin: 0 0 -3% 0;
+    }
+    
+    #notice-message-mobile {
+        display: none;
+    }
+    
+    #notice-message-desktop {
+        position: relative;
+        top: 30%;
+        line-height: 1.62;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 1.48em;
+        text-align: center;
+    }
+    
     .design {
         display: inline-block;
-        width: 33.33vw;
-        height: 33.33vw;
-        background-color: #f0f0f0;
+        width: 25%;
+        height: 0;
+        padding-bottom: 25%;
+        margin: 3%;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    
+    .design-img {
+        display: block;
+        position: relative;
+        width: 100%;
+        user-drag: none; 
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-drag: none;
+        -webkit-user-select: none;
+        -ms-user-select: none;
+    }
+    
+    .desktop-trigger {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 0;
+        padding-bottom: 100%;
+    }
+    
+    .info {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff;
+    }
+    
+    .text {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.75);
+        padding: 4.9vw 3vw 0 3vw;
+        z-index: 2;
+    }
+    
+    .title {
+        position: relative;
+        line-height: 1.62;
+        font-family: Roboto, sans-serif;
+        font-weight: 500;
+        font-size: 1.48em;
+        text-align: left;
+    }
+    
+    .description {
+        position: relative;
+        line-height: 1.62;
+        font-family: Roboto, sans-serif;
+        font-weight: 300;
+        font-size: 0.98em;
+        text-align: left;
     }
 
     #copyright {
         display: block;
         width: 100%;
-        height: 2.75vw;
+        height: 48px;
         background-color: #ffffff;
     }
 
@@ -386,8 +425,8 @@
         position: relative;
         font-family: Roboto, sans-serif;
         font-weight: 300;
-        font-size: 1.25vw;
+        font-size: 1.23em;
         text-align: center;
         top: 50%;
-        }*/
+        }
 }
