@@ -2,18 +2,6 @@ body {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-a:link {
-    text-decoration: none;
-}
-
-a:active {
-    color: #202020;
-}
-
-a:visited {
-    color: #202020;
-}
-
 #text {
     width: 90%;
     position: absolute;
