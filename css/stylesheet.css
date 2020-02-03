@@ -1,0 +1,35 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #202020;
+}
+
+#text {
+    width: 90%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#hello {
+    color: #202020;
+    font-size: 5vh;
+    font-weight: bold;
+    text-align: center;
+    line-height: 0;
+    letter-spacing: -0.03em;
+}
+
+#message {
+    color: #a0a0a0;
+    font-size: 2vh;
+    font-weight: normal;
+    text-align: center;
+}
