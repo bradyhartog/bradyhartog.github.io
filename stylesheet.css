@@ -3,25 +3,25 @@ body {
 }
 
 #text {
+    width: 90%;
     position: absolute;
     top: 45%;
-    transform: translateY(-50%);
-    width: 100%;
-    padding-right: 3mm;
-    padding-left: 3mm;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #hello {
     color: #202020;
-    font-size: 6vh;
+    font-size: 5vh;
     font-weight: bold;
     text-align: center;
     line-height: 0;
+    letter-spacing: -0.03em;
 }
 
 #message {
     color: #a0a0a0;
-    font-size: 3vh;
+    font-size: 2vh;
     font-weight: normal;
     text-align: center;
 }
