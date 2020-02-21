@@ -2,6 +2,8 @@
 <html>
     <head>
         <link type="text/css" rel="stylesheet" href="index.css"/>
+        <link href="Images/Favicon.png" rel="icon" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="Images/Apple%20Touch%20Icon.png">
         <title>Brady Hartog</title>
         
         <script type=text/javascript>
@@ -16,6 +18,12 @@
                     y.style.opacity = "0";
                 }
             }
+            
+            $(window).bind("pageshow", function(event) {
+                if (event.originalEvent.persisted) {
+                    window.location.reload(); 
+                }
+            });
         </script>
     </head>
     
