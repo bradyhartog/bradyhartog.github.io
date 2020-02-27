@@ -66,49 +66,33 @@
         font-size: 18.36pt;
         letter-spacing: -0.02em;
         line-height: 0.4em;
-        padding-left: 9pt;
+        padding-right: 9pt;
         padding-bottom: 7.8pt;
+/*
+        margin-left: 193pt;
+        padding-right: 19pt;
+*/
+        text-align: center;
     }
     
     #content {
         width: 567pt;
-        padding-left: 171pt;
+        padding-left: 180pt;
         margin-left: 29pt;
-        text-align: center;
+        text-align: left;
     }
     
-    .content-item {
-        display: inline-block;
+    #headshot {
         float: left;
         width: 180pt;
-        height: 222pt;
-        margin-left: 9pt;
-        margin-bottom: 18pt;
-        vertical-align: top;
-        font-size: 11.12pt;
-        line-height: 0.6em;
     }
     
-    .content-item:hover {
-        opacity: 0.4;
-    }
-    
-    .content-image {
-        display: block;
-        width: 180pt;
-        height: 180pt;
-        background-color: #e0e0e0;
-    }
-    
-    .content-title {
-        color: #404040;
-        font-weight: bold;
-        padding-top: 3pt;
-    }
-    
-    .content-subtitle {
-        color: #a0a0a0;
+    #bio {
+        color: #808080;
         font-weight: normal;
+        font-size: 12pt;
+        line-height: 1.25em;
+        margin-left: 193pt;
     }
 
     #copyright-desktop {
@@ -222,7 +206,7 @@
     #content {
         display: block;
         position: relative;
-        width: 94vw;
+        width: 92vw;
         top: 16vw;
         left: 4vw;
         text-align: center;
@@ -240,25 +224,18 @@
         line-height: 0.4em;
     }
     
-    .content-item:hover {
-        opacity: 0.4;
+    #headshot {
+        width: 62vw;
     }
     
-    .content-image {
-        width: 45vw;
-        height: 45vw;
-        background-color: #d0d0d0;
-    }
-    
-    .content-title {
-        color: #404040;
-        font-weight: bold;
-        padding-top: 1vw;
-    }
-    
-    .content-subtitle {
-        color: #a0a0a0;
+    #bio {
+        color: #808080;
         font-weight: normal;
+        font-size: 4vw;
+        line-height: 1.25em;
+        text-align: left;
+        margin-left: 5vw;
+        margin-right: 5vw;
     }
     
     #copyright-desktop {

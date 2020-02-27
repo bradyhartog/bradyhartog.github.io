@@ -1,0 +1,61 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link type="text/css" rel="stylesheet" href="about.css"/>
+        <link href="Images/Favicon.png" rel="icon" type="image/x-icon"/>
+        <link rel="apple-touch-icon" href="Images/Apple%20Touch%20Icon.png">
+        <title>Brady Hartog | About</title>
+        
+        <script type=text/javascript>
+            function showWorkMenu() {
+                var x = document.getElementById("work-menu");
+                if (x.style.display === "block") {
+                    x.style.display = "none";
+                } else {
+                    x.style.display = "block";
+                }
+            }
+        </script>
+    </head>
+    
+<body>
+    <div id="page">
+        <div id="menu">
+            <p class="menu-item", id = "title"><a href="index.html">Brady Hartog</a></p>
+
+            <p class="menu-item", id="about"><a href="about.html">About</a></p>
+
+            <input type="checkbox", id="work-highlight">
+            <label for="work-highlight">
+                <p class="menu-item", id="work", onclick="showWorkMenu()">Work</p>
+            </label>
+
+            <div id="work-menu">
+                <p class="menu-item"><a href="work/engineering.html">Engineering</a></p>
+
+                <p class="menu-item"><a href="work/design.html">Design</a></p>
+
+                <p class="menu-item"><a href="work/music.html">Music</a></p>
+
+                <p class="menu-item"><a href="work/photos.html">Photos</a></p>
+
+                <p class="menu-item"><a href="work/presentations.html">Presentations</a></p>
+            </div>
+
+            <p class="menu-item", id="contact"><a href="contact.html">Contact</a></p>
+
+            <p id="copyright-desktop">&#169; 2020 Brady Hartog</p>
+        </div>
+        
+        <div id="content">
+            <p id="page-title">About (Page in Progress)</p>
+            
+            <img src="Images/Headshot.jpg", id="headshot">
+            
+            <p id="bio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas dignissim purus a laoreet. Cras massa libero, scelerisque non lectus in, pharetra consectetur magna. Integer est odio, blandit vel pellentesque sed, suscipit vel enim. Praesent vel tortor ut dui tincidunt elementum non et turpis. Aliquam sed ex volutpat, cursus leo ac, sagittis eros. Suspendisse sed pharetra ipsum. Nulla aliquam mi vel felis lobortis bibendum. Maecenas sollicitudin libero a nulla fringilla, ac tincidunt neque vehicula. Suspendisse nisi ex, pretium vel sapien varius, pulvinar dictum lectus. Cras sollicitudin tellus semper, mollis est et, semper erat. Phasellus luctus sollicitudin eros eu rhoncus. Nullam quis tempus arcu, a convallis dolor. Quisque et blandit diam. Nunc finibus, mi quis hendrerit accumsan, enim ante ultricies purus, ac fermentum arcu orci vitae tortor. Donec facilisis porta velit, sit amet vehicula lectus mollis et. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse egestas dignissim purus a laoreet. Cras massa libero, scelerisque non lectus in, pharetra consectetur magna. Integer est odio, blandit vel pellentesque sed, suscipit vel enim. Praesent vel tortor ut dui tincidunt elementum non et turpis. Aliquam sed ex volutpat, cursus leo ac, sagittis eros. Suspendisse sed pharetra ipsum. Nulla aliquam mi vel felis lobortis bibendum. Maecenas sollicitudin libero a nulla fringilla, ac tincidunt neque vehicula. Suspendisse nisi ex, pretium vel sapien varius, pulvinar dictum lectus. Cras sollicitudin tellus semper, mollis est et, semper erat. Phasellus luctus sollicitudin eros eu rhoncus. Nullam quis tempus arcu, a convallis dolor. Quisque et blandit diam. Nunc finibus, mi quis hendrerit accumsan, enim ante ultricies purus, ac fermentum arcu orci vitae tortor. Donec facilisis porta velit, sit amet vehicula lectus mollis et.</p>
+            
+            <p id="copyright-mobile">&#169; 2020 Brady Hartog</p>
+        </div>
+    </div>
+</body>
+</html>
