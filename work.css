@@ -68,13 +68,14 @@
         line-height: 0.4em;
         padding-left: 9pt;
         padding-bottom: 7.8pt;
+        text-align: center;
     }
     
     #content {
         width: 567pt;
-        padding-left: 171pt;
         margin-left: 29pt;
-        text-align: center;
+        padding-left: 171pt;
+        padding-bottom: 72pt;
     }
     
     .content-item {
@@ -94,7 +95,6 @@
     }
     
     .content-image {
-        display: block;
         width: 180pt;
         height: 180pt;
         background-color: #e8e8e8;
@@ -109,6 +109,69 @@
     .content-subtitle {
         color: #a0a0a0;
         font-weight: normal;
+    }
+    
+    .header-image {
+        background-color: #e8e8e8;
+        width: 567pt;
+        height: 102pt;
+    }
+    
+    .article-title {
+        color: #404040;
+        font-weight: bold;
+        font-size: 32pt;
+        letter-spacing: -0.02em;
+        line-height: 1.15em;
+        margin-top: 0.6em;
+        margin-bottom: 0.4em;
+    }
+    
+    .article-subtitle {
+        color: #404040;
+        font-weight: bold;
+        font-size: 15pt;
+        line-height: 1.25em;
+        margin-top: 0;
+        margin-bottom: 3em;
+    }
+    
+    .article-body {
+        color: #808080;
+        font-weight: normal;
+        font-size: 12pt;
+        line-height: 1.25em;
+        margin-top: 0;
+        margin-bottom: 1.25em;
+    }
+    
+    .descriptor {
+        position: relative;
+    }
+    
+    .descriptor-title {
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        color: #808080;
+        font-weight: bold;
+        font-size: 12pt;
+        line-height: 1.25em;
+        margin-top: 0;
+        margin-bottom: 1.25em;
+    }
+    
+    .descriptor-body {
+        display: inline-block;
+        vertical-align: top;
+        width: 495pt;
+        color: #808080;
+        font-weight: normal;
+        font-size: 12pt;
+        line-height: 1.25em;
+        margin-left: 72pt;
+        margin-top: 0;
+        margin-bottom: 1.25em;
     }
 
     #copyright-desktop {
@@ -136,10 +199,6 @@
         margin: 0 0 0 0;
     }
     
-    #page {
-        
-    }
-
     #title {
         position: absolute;
         left: 4vw;
@@ -217,6 +276,7 @@
         font-weight: bold;
         font-size: 5vw;
         padding-right: 2vw;
+        text-align: center;
     }
     
     #content {
@@ -225,7 +285,6 @@
         width: 94vw;
         top: 16vw;
         left: 4vw;
-        text-align: center;
     }
     
     .content-item {
@@ -247,7 +306,7 @@
     .content-image {
         width: 45vw;
         height: 45vw;
-        background-color: #d0d0d0;
+        background-color: #e8e8e8;
     }
     
     .content-title {
@@ -261,18 +320,84 @@
         font-weight: normal;
     }
     
+    .header-image {
+        background-color: #e8e8e8;
+        width: 92vw;
+        height: 16.55vw;
+    }
+    
+    .article-title {
+        color: #404040;
+        font-weight: bold;
+        font-size: 8vw;
+        letter-spacing: -0.02em;
+        line-height: 1.15em;
+        margin-top: 0.6em;
+        margin-bottom: 0.4em;
+    }
+    
+    .article-subtitle {
+        color: #404040;
+        font-weight: bold;
+        font-size: 4vw;
+        line-height: 1.25em;
+        margin-top: 0;
+        margin-bottom: 3em;
+    }
+    
+    .article-body {
+        color: #808080;
+        font-weight: normal;
+        font-size: 4vw;
+        line-height: 1.25em;
+        margin-top: 0;
+        margin-bottom: 1.25em;
+        padding-right: 2vw;
+    }
+    
+    .descriptor {
+        position: relative;
+    }
+    
+    .descriptor-title {
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        color: #808080;
+        font-weight: bold;
+        font-size: 4vw;
+        line-height: 1.25em;
+        margin-top: 0;
+        margin-bottom: 1.25em;
+    }
+    
+    .descriptor-body {
+        display: inline-block;
+        vertical-align: top;
+        width: 68vw;
+        color: #808080;
+        font-weight: normal;
+        font-size: 4vw;
+        line-height: 1.25em;
+        margin-left: 24vw;
+        margin-top: 0;
+        margin-bottom: 1.25em;
+    }
+    
     #copyright-desktop {
         display: none;
     }
 
     #copyright-mobile {
         display: inline-block;
+        width: 92vw;
         color: #808080;
         font-weight: normal;
         font-size: 3vw;
-        margin-top: 5vw;
+        margin-top: 12vw;
         margin-bottom: 5vw;
         padding-right: 2vw;
+        text-align: center;
     }
 
     a:any-link {
