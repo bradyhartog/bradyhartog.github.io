@@ -81,7 +81,6 @@
         display: inline-block;
         float: left;
         width: 180pt;
-        height: 222pt;
         margin-left: 9pt;
         margin-bottom: 18pt;
         vertical-align: top;
@@ -93,22 +92,16 @@
         opacity: 0.4;
     }
     
-    .content-image {
+    .contact-icon {
         display: block;
-        width: 180pt;
-        height: 180pt;
-        background-color: #e0e0e0;
+        width: 60pt;
+        margin-left: auto;
+        margin-right: auto;
     }
     
-    .content-title {
+    .contact-descriptor {
         color: #404040;
         font-weight: bold;
-        padding-top: 3pt;
-    }
-    
-    .content-subtitle {
-        color: #a0a0a0;
-        font-weight: normal;
     }
 
     #copyright-desktop {
@@ -229,11 +222,11 @@
     }
     
     .content-item {
-        display: inline-block;
+        display: block;
         float: left;
-        width: 45vw;
-        height: 55.6vw;
+        width: 92vw;
         margin-right: 2vw;
+        margin-top: 8vw;
         margin-bottom: 4vw;
         vertical-align: top;
         font-size: 3vw;
@@ -244,21 +237,15 @@
         opacity: 0.4;
     }
     
-    .content-image {
-        width: 45vw;
-        height: 45vw;
+    .contact-icon {
+        width: 16vw;
         background-color: #d0d0d0;
     }
     
-    .content-title {
+    .contact-descriptor {
         color: #404040;
         font-weight: bold;
-        padding-top: 1vw;
-    }
-    
-    .content-subtitle {
-        color: #a0a0a0;
-        font-weight: normal;
+/*        padding-top: 1vw;*/
     }
     
     #copyright-desktop {
@@ -267,12 +254,14 @@
 
     #copyright-mobile {
         display: inline-block;
+        width: 92vw;
         color: #808080;
         font-weight: normal;
         font-size: 3vw;
-        margin-top: 5vw;
+        margin-top: 12vw;
         margin-bottom: 5vw;
         padding-right: 2vw;
+        text-align: center;
     }
 
     a:any-link {
