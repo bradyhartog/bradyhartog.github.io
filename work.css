@@ -145,6 +145,23 @@
         margin-bottom: 1.25em;
     }
     
+    .article-item {
+        width: 100%;
+        margin-top: 2.25em;
+        margin-bottom: 2.25em;
+    }
+    
+    .article-image {
+        width: 100%;
+    }
+    
+    .caption {
+        color: #808080;
+        font-weight: normal;
+        font-size: 10pt;
+        line-height: 1.25em;
+    }
+    
     .descriptor {
         position: relative;
     }
@@ -353,6 +370,23 @@
         margin-top: 0;
         margin-bottom: 1.25em;
         padding-right: 2vw;
+    }
+    
+    .article-item {
+        width: 92vw;
+        margin-top: 2.25em;
+        margin-bottom: 2.25em;
+    }
+    
+    .article-image {
+        width: 100%;
+    }
+    
+    .caption {
+        color: #808080;
+        font-weight: normal;
+        font-size: 3vw;
+        line-height: 1.25em;
     }
     
     .descriptor {

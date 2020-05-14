@@ -70,10 +70,10 @@
                 <p class="descriptor-body">Design a model for more accurately determining the angular orientation of tool bodies.</p>
             </div>
             
-            <div class="descriptor">
+            <!--<div class="descriptor">
                 <p class="descriptor-title">Process</p>
                 <p class="descriptor-body">Rather than implementing a centralized INS, the INS becomes distributed across several nodes around a body’s circumference. Each node contains an accelerometer which measures the body’s angular orientation with a low degree of accuracy. By synthesizing the measurements from every accelerometer (via Bayes’ theorem), a more accurate measurement is obtained.</p>
-            </div>
+            </div>-->
             
             <div class="descriptor">
                 <p class="descriptor-title">Outcome</p>
@@ -81,6 +81,18 @@
             </div>
             
             <!--<p class="article-body">See also this project’s <a>presentation</a>.</p>-->
+            
+            <div class="article-item">
+                <img class="article-image", src="Images/inertial-navigation-model/results-1.jpg">
+
+                <p class="caption">Error analysis of the model. The average error in the predicted orientation relative to the location of defunct sensors.</p>
+            </div>
+            
+            <div class="article-item">
+                <img class="article-image", src="Images/inertial-navigation-model/results-2.jpg">
+
+                <p class="caption">Further error analysis of the model. The average error in the predicted orientation in a "disaster" scenario involving many defunct sensors.</p>
+            </div>
             
             <p id="copyright-mobile">&#169; 2020 Brady Hartog</p>
         </div>
