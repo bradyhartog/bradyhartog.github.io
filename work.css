@@ -35,6 +35,7 @@
         padding-left: 29pt;
         padding-right: 29pt;
         background-color: #ffffff;
+        z-index: 999;
     }
 
     .menu-item {
@@ -175,32 +176,28 @@
     }
     
     .descriptor {
-        position: relative;
+        font-size: 12pt;
+        padding-left: 72pt;
     }
     
     .descriptor-title {
-        display: inline-block;
-        vertical-align: top;
-        position: absolute;
+        position: relative;
+        left: -72pt;
         color: #808080;
         font-weight: bold;
-        font-size: 12pt;
         line-height: 1.25em;
-        margin-top: 0;
-        margin-bottom: 1.25em;
+        margin-top: -0.1em;
+        margin-bottom: 0;
     }
     
     .descriptor-body {
-        display: inline-block;
-        vertical-align: top;
-        width: 495pt;
+        position: relative;
+        top: -1.25em;
         color: #808080;
         font-weight: normal;
-        font-size: 12pt;
         line-height: 1.25em;
-        margin-left: 6em;
         margin-top: 0;
-        margin-bottom: 1.25em;
+        margin-bottom: 0.1em;
     }
 
     #copyright-desktop {
@@ -294,10 +291,11 @@
         font-size: 4vh;
         line-height: 0.4em;
         background-color: #ffffff;
-        padding-top: 24vh;
+        padding-top: 20vh;
         padding-bottom: 100vh;
         padding-left: 4vw;
         padding-right: 4vw;
+        
     }
     
     #page-title {
@@ -323,7 +321,7 @@
     #back-arrow {
         height: 3.54vw;
         vertical-align: top;
-        margin-top: 1.33vw;
+        margin-top: 1.39vw;
     }
     
     #content {
@@ -416,32 +414,28 @@
     }
     
     .descriptor {
-        position: relative;
+        font-size: 4vw;
+        margin-top: 0;
+        margin-bottom: 1.25em;
+        padding-left: 24vw;
+        padding-right: 2vw;
     }
     
     .descriptor-title {
-        display: inline-block;
-        vertical-align: top;
         position: absolute;
+        left: 0;
         color: #808080;
         font-weight: bold;
-        font-size: 4vw;
         line-height: 1.25em;
-        margin-top: 0;
-        margin-bottom: 1.25em;
+        margin-top: -0.1em;
+        margin-bottom: 0;
     }
     
     .descriptor-body {
-        display: inline-block;
-        vertical-align: top;
-        width: 68vw;
         color: #808080;
         font-weight: normal;
-        font-size: 4vw;
         line-height: 1.25em;
-        margin-left: 24vw;
-        margin-top: 0;
-        margin-bottom: 1.25em;
+        margin: 0;
     }
     
     #copyright-desktop {

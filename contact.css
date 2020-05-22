@@ -35,6 +35,7 @@
         padding-left: 29pt;
         padding-right: 29pt;
         background-color: #ffffff;
+        z-index: 999;
     }
 
     .menu-item {
