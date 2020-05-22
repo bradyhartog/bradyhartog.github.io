@@ -1,4 +1,4 @@
-/*@media screen and (min-aspect-ratio: 3/4) {*/
+@media screen and (min-aspect-ratio: 3/4) {
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -218,8 +218,8 @@
         text-decoration: none;
         color: inherit;
     }
-/*}*/
-/*
+}
+
 @media screen and (max-aspect-ratio: 3/4) {
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -370,7 +370,7 @@
     .article-title {
         color: #404040;
         font-weight: bold;
-        font-size: 27pt;
+        font-size: 8vw;
         letter-spacing: -0.02em;
         line-height: 1.15em;
         margin-top: -0.1em;
@@ -381,7 +381,7 @@
     .article-subtitle {
         color: #404040;
         font-weight: bold;
-        font-size: 15pt;
+        font-size: 4vw;
         line-height: 1.25em;
         margin-top: 0;
         margin-bottom: 2em;
@@ -391,7 +391,7 @@
     .article-body {
         color: #808080;
         font-weight: normal;
-        font-size: 12pt;
+        font-size: 4vw;
         line-height: 1.25em;
         margin-top: 0;
         margin-bottom: 1.25em;
@@ -400,8 +400,8 @@
     
     .article-item {
         width: 92vw;
-        margin-top: 2.25em;
-        margin-bottom: 2.25em;
+        margin-top: 6.75vw;
+        margin-bottom: 6.75vw;
     }
     
     .article-image {
@@ -411,7 +411,7 @@
     .caption {
         color: #808080;
         font-weight: normal;
-        font-size: 10pt;
+        font-size: 3vw;
         line-height: 1.25em;
     }
     
@@ -425,7 +425,7 @@
         position: absolute;
         color: #808080;
         font-weight: bold;
-        font-size: 12pt;
+        font-size: 4vw;
         line-height: 1.25em;
         margin-top: 0;
         margin-bottom: 1.25em;
@@ -434,14 +434,14 @@
     .descriptor-body {
         display: inline-block;
         vertical-align: top;
+        width: 68vw;
         color: #808080;
         font-weight: normal;
-        font-size: 12pt;
+        font-size: 4vw;
         line-height: 1.25em;
-        margin-left: 72pt;
+        margin-left: 24vw;
         margin-top: 0;
         margin-bottom: 1.25em;
-        padding-right: 2vw;
     }
     
     #copyright-desktop {
@@ -453,7 +453,7 @@
         width: 92vw;
         color: #808080;
         font-weight: normal;
-        font-size: 10pt;
+        font-size: 3vw;
         margin-top: 12vw;
         margin-bottom: 5vw;
         padding-right: 2vw;
@@ -465,4 +465,3 @@
         color: inherit;
     }
 }
-*/
