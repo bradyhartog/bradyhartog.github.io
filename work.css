@@ -149,19 +149,30 @@
         margin-bottom: 2em;
     }
     
-    .article-body {
+    .article-section {
         color: #808080;
-        font-weight: normal;
         font-size: 12pt;
         line-height: 1.25em;
         margin-top: 0;
-        margin-bottom: 1.25em;
+        margin-bottom: 2em;
+    }
+    
+    .section-heading {
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    
+    .section-body {
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 0.6em;
     }
     
     .article-item {
         width: 561pt;
-        margin-top: 2.25em;
-        margin-bottom: 2.25em;
+        margin-top: 3em;
+        margin-bottom: 3em;
     }
     
     .article-image {
@@ -175,6 +186,7 @@
         line-height: 1.25em;
     }
     
+    /*
     .descriptor {
         font-size: 12pt;
         padding-left: 72pt;
@@ -199,6 +211,7 @@
         margin-top: 0;
         margin-bottom: 0.1em;
     }
+    */
 
     #copyright-desktop {
         color: #808080;
@@ -321,7 +334,7 @@
     #back-arrow {
         height: 3.54vw;
         vertical-align: top;
-        margin-top: 1.39vw;
+        margin-top: 1.4vw;
     }
     
     #content {
@@ -386,20 +399,30 @@
         padding-right: 2vw;
     }
     
-    .article-body {
+    .article-section {
         color: #808080;
-        font-weight: normal;
         font-size: 4vw;
         line-height: 1.25em;
         margin-top: 0;
-        margin-bottom: 1.25em;
-        padding-right: 2vw;
+        margin-bottom: 2em;
+    }
+    
+    .section-heading {
+        font-weight: bold;
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+    
+    .section-body {
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 0.6em;
     }
     
     .article-item {
         width: 92vw;
-        margin-top: 6.75vw;
-        margin-bottom: 6.75vw;
+        margin-top: 12vw;
+        margin-bottom: 12vw;
     }
     
     .article-image {
@@ -413,6 +436,7 @@
         line-height: 1.25em;
     }
     
+    /*
     .descriptor {
         font-size: 4vw;
         margin-top: 0;
@@ -437,6 +461,7 @@
         line-height: 1.25em;
         margin: 0;
     }
+    */
     
     #copyright-desktop {
         display: none;
