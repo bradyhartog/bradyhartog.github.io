@@ -1,4 +1,4 @@
-@media screen and (min-aspect-ratio: 3/4) {
+/*@media screen and (min-aspect-ratio: 3/4) {*/
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -218,8 +218,8 @@
         text-decoration: none;
         color: inherit;
     }
-}
-
+/*}*/
+/*
 @media screen and (max-aspect-ratio: 3/4) {
     body {
         font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -465,3 +465,4 @@
         color: inherit;
     }
 }
+*/
