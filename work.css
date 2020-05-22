@@ -198,7 +198,7 @@
         font-weight: normal;
         font-size: 12pt;
         line-height: 1.25em;
-        margin-left: 72pt;
+        margin-left: 6em;
         margin-top: 0;
         margin-bottom: 1.25em;
     }
@@ -323,7 +323,7 @@
     #back-arrow {
         height: 3.54vw;
         vertical-align: top;
-        margin-top: 1.25vw;
+        margin-top: 1.33vw;
     }
     
     #content {
