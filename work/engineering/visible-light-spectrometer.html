@@ -56,10 +56,179 @@
             
             <h2 class="article-subtitle">University of Utah — 2019</h2>
             
+            <div class="article-item">
+                <img class="article-image", src="Images/visible-light-spectrometer/close-up.jpg">
+                <p class="caption">Close-up view of the prototype device.</p>
+            </div>
+            
             <div class="article-section">
                 <p class="article-body">This page is currently in progress. Please check back soon!</p>
             </div>
             
+            <div class="article-item">
+                <img class="article-image", src="Images/visible-light-spectrometer/block-diagram.jpg">
+                <p class="caption">Lorem ipsum dolor.</p>
+            </div>
+            
+            <div class="article-item">
+                <img class="article-image", src="Images/visible-light-spectrometer/schematic.jpg">
+                <p class="caption">Lorem ipsum dolor.</p>
+            </div>
+            
+            <div class="article-item">
+                <img class="article-image", src="Images/visible-light-spectrometer/photoresistors-1.jpg">
+                <p class="caption">Lorem ipsum dolor.</p>
+            </div>
+            
+            <div class="article-item">
+                <img class="article-image", src="Images/visible-light-spectrometer/photoresistors-2.jpg">
+                <p class="caption">Lorem ipsum dolor.</p>
+            </div>
+            
+            <div class="article-item">
+                <img class="article-image", src="Images/visible-light-spectrometer/simulation-plot.jpg">
+                <p class="caption">Lorem ipsum dolor.</p>
+            </div>
+            
+            <div class="article-item">
+                <img class="article-image", src="Images/visible-light-spectrometer/view-1.jpg">
+                <p class="caption">Lorem ipsum dolor.</p>
+            </div>
+            
+            <div class="article-item">
+                <img class="article-image", src="Images/visible-light-spectrometer/view-2.jpg">
+                <p class="caption">Lorem ipsum dolor.</p>
+            </div>
+            
+            <div class="article-item">
+                <img class="article-image", src="Images/visible-light-spectrometer/view-3.jpg">
+                <p class="caption">Lorem ipsum dolor.</p>
+            </div>
+            
+            <div class="article-item">
+                <img class="article-image", src="Images/visible-light-spectrometer/sequences.jpg">
+                <p class="caption">Lorem ipsum dolor.</p>
+            </div>
+            
+            <div class="article-item">
+                <video width="100%" controls>
+                    <source src="Images/visible-light-spectrometer/demo.mp4" type="video/mp4">
+                    Your browser does not support this video.
+                </video>
+                <p class="caption">Demonstrating of the operation of the visible light spectrometer.</p>
+            </div>
+            
+            <!-- HTML generated using hilite.me -->
+            <div style="background: #f6f6f6;overflow:auto;width:523pt;border:solid #e0e0e0;border-width:0 0 0 6pt;padding:16pt 16pt;"><pre style="margin: 0;color: #404040;line-height: 125%;"><span style="color: #008000">// Initialize input pins</span>
+
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> red_input = A0;
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> green_input = A1;
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> blue_input = A2;
+
+<span style="color: #008000">// Initialize output pins</span>
+
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> red_indicator_low = 2;
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> red_indicator_mid = 3;
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> red_indicator_high = 4;
+
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> green_indicator_low = 5;
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> green_indicator_mid = 6;
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> green_indicator_high = 7;
+
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> blue_indicator_low = 8;
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> blue_indicator_mid = 9;
+<span style="color: #0000ff">const</span> <span style="color: #2b91af">int</span> blue_indicator_high = 10;
+
+<span style="color: #008000">// Initialize channel values</span>
+
+<span style="color: #2b91af">int</span> R = 0;
+<span style="color: #2b91af">int</span> G = 0;
+<span style="color: #2b91af">int</span> B = 0;
+
+<span style="color: #2b91af">void</span> setup() {
+  Serial.begin(9600);
+
+  pinMode(red_indicator_low, OUTPUT);
+  pinMode(red_indicator_mid, OUTPUT);
+  pinMode(red_indicator_high, OUTPUT);
+  
+  pinMode(green_indicator_low, OUTPUT);
+  pinMode(green_indicator_mid, OUTPUT);
+  pinMode(green_indicator_high, OUTPUT);
+  
+  pinMode(blue_indicator_low, OUTPUT);
+  pinMode(blue_indicator_mid, OUTPUT);
+  pinMode(blue_indicator_high, OUTPUT);
+}
+
+<span style="color: #2b91af">void</span> loop() {
+  <span style="color: #008000">// Read channel values</span>
+  
+  R = analogRead(red_input);
+  delay(5);
+  G = analogRead(green_input);
+  delay(5);
+  B = analogRead(blue_input);
+
+  <span style="color: #008000">// Print channel data</span>
+
+  Serial.print(<span style="color: #a31515">&quot;Raw Sensor Values \t R: &quot;</span>);
+  Serial.print(R);
+  Serial.print(<span style="color: #a31515">&quot;\t G: &quot;</span>);
+  Serial.print(G);
+  Serial.print(<span style="color: #a31515">&quot;\t B: &quot;</span>);
+  Serial.println(B);
+
+  <span style="color: #0000ff">if</span> (R &gt;= 256) {
+    digitalWrite(red_indicator_low, 1);
+  } <span style="color: #0000ff">else</span> {
+    digitalWrite(red_indicator_low, 0);
+  }
+  <span style="color: #0000ff">if</span> (R &gt;= 512) {
+    digitalWrite(red_indicator_mid, 1);
+  } <span style="color: #0000ff">else</span> {
+    digitalWrite(red_indicator_mid, 0);
+  }
+  <span style="color: #0000ff">if</span> (R &gt;= 768) {
+    digitalWrite(red_indicator_high, 1);
+  } <span style="color: #0000ff">else</span> {
+    digitalWrite(red_indicator_high, 0);
+  }
+
+  <span style="color: #0000ff">if</span> (G &gt;= 256) {
+    digitalWrite(green_indicator_low, 1);
+  } <span style="color: #0000ff">else</span> {
+    digitalWrite(green_indicator_low, 0);
+  }
+  <span style="color: #0000ff">if</span> (G &gt;= 512) {
+    digitalWrite(green_indicator_mid, 1);
+  } <span style="color: #0000ff">else</span> {
+    digitalWrite(green_indicator_mid, 0);
+  }
+  <span style="color: #0000ff">if</span> (G &gt;= 768) {
+    digitalWrite(green_indicator_high, 1);
+  } <span style="color: #0000ff">else</span> {
+    digitalWrite(green_indicator_high, 0);
+  }
+
+  <span style="color: #0000ff">if</span> (B &gt;= 256) {
+    digitalWrite(blue_indicator_low, 1);
+  } <span style="color: #0000ff">else</span> {
+    digitalWrite(blue_indicator_low, 0);
+  }
+  <span style="color: #0000ff">if</span> (B &gt;= 512) {
+    digitalWrite(blue_indicator_mid, 1);
+  } <span style="color: #0000ff">else</span> {
+    digitalWrite(blue_indicator_mid, 0);
+  }
+  <span style="color: #0000ff">if</span> (B &gt;= 768) {
+    digitalWrite(blue_indicator_high, 1);
+  } <span style="color: #0000ff">else</span> {
+    digitalWrite(blue_indicator_high, 0);
+  }
+}
+</pre></div>
+
             <p id="copyright-mobile">&#169; 2020 Brady Hartog</p>
         </div>
     </div>

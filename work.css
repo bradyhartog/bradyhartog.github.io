@@ -9,12 +9,11 @@
     #page {
         display: block;
         position: absolute;
-        width: 738pt;
+        width: 808pt;
         top: 18pt;
         left: 0;
         right: 0;
         margin: auto;
-        padding-right: 58pt;
     }
 
     #title {
@@ -93,7 +92,7 @@
     #content {
         width: 567pt;
         margin-left: 29pt;
-        padding-left: 177pt;
+        padding-left: 189pt;
         padding-bottom: 36pt;
     }
     
