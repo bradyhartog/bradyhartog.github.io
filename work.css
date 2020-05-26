@@ -184,6 +184,16 @@
         line-height: 1.25em;
     }
     
+    .code {
+        background: #f6f6f6;
+        overflow: auto;
+        width: 524.5pt;
+        border: solid #e0e0e0;
+        border-width: 0 0 0 4.5pt;
+        font-size: 10pt;
+        padding: 4pt 16pt;
+    }
+    
     /*
     .descriptor {
         font-size: 12pt;
@@ -431,6 +441,16 @@
         font-weight: normal;
         font-size: 3vw;
         line-height: 1.25em;
+    }
+    
+    .code {
+        background: #f6f6f6;
+        overflow: auto;
+        width: 85vw;
+        border: solid #e0e0e0;
+        border-width: 0 0 0 1vw;
+        font-size: 3vw;
+        padding: 3vw 3vw;
     }
     
     /*
