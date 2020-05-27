@@ -385,6 +385,7 @@
     }
     
     .article-section {
+        width: 92vw;
         color: #808080;
         font-size: 4vw;
         line-height: 1.25em;
