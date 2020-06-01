@@ -152,6 +152,7 @@
         line-height: 1.25em;
         margin-top: 0;
         margin-bottom: 2em;
+        padding-right: 6pt;
     }
     
     .section-heading {
@@ -183,6 +184,7 @@
         font-size: 10pt;
         line-height: 1.25em;
         margin-top: 6pt;
+        padding-right: 6pt;
     }
     
     .code {
