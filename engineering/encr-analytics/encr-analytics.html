@@ -1,0 +1,27 @@
+<div class='content' id='article-content'>
+	<div class='article'>
+		<p class='article-text title'>ENCR Analytics</p>
+		<div class='article-text hr'></div>
+		<div class='article-text'>
+			<p class='article-association'>Reaction Engineering International</p>
+			<p class='article-date'>August 2020</p>
+		</div>
+		<p class='article-spacer'></p>
+		<p class='article-text heading'>Background</p>
+		<p class='article-text body'>The Corrosion Probe Dashboard is a webapp that provides a wireless interface to an electronic probe for measuring electrochemical noise corrosion rate (“ENCR”) in industrial combustion furnaces. The Dashboard displays the readings of the probe in real time.</p>
+		<p class='article-text heading'>Problem</p>
+		<p class='article-text body'>A raw ENCR signal has a low signal-to-noise ratio. This requires that the signal be filtered before any meaningful inferences can be drawn. The Corrosion Probe Dashboard lacks an integrated tool for implementing this essential processing step.</p>
+		<p class='article-text heading'>Objective</p>
+		<p class='article-text body'>Design and implement an integrated tool for filtering the ENCR  signal on the Corrosion Probe Dashboard.</p>
+		<p class='article-text heading'>Process</p>
+		<p class='article-text body'>The filtering action is implemented with Python scripting. The Dashboard's API was expanded to facilitate transferring the filtered data from the scripts in the backend to the graphs in the frontend.</p>
+		<p class='article-text heading'>Outcome</p>
+		<p class='article-text body'>The resulting tool, called ENCR Analytics, allows the user to interactively filter the ENCR signal using either a classic lowpass filter or a dedicated trend analyzer.</p>
+		<img class='article-image' src='encr-analytics/assets/filter-current.jpg'>
+<!--		<p class='article-text caption'></p>-->
+		<img class='article-image' src='encr-analytics/assets/filter-historical.jpg'>
+<!--		<p class='article-text caption'></p>-->
+		<img class='article-image' src='encr-analytics/assets/trends.jpg'>
+<!--		<p class='article-text caption'></p>-->
+	</div>
+</div>

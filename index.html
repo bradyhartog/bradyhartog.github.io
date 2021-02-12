@@ -1,21 +1,17 @@
-<!DOCTYPE HTML>
-<html> 
-    <head> 
-        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-				<link href='index/favicon.png' rel='icon' type='image/x-icon'/>
-				<link rel='apple-touch-icon' href='index/apple-touch-icon.png'>
-        <title>Brady Hartog</title>
-    </head> 
-    
-<body>
-    <div id="text">
-        <div id="hello">
-        <p>Hello.</p>
-        </div>
-    
-        <div id="message">
-        <p>This part of the site is currently under construction. Please check back later!</p> 
-        </div>
-    </div>
-</body> 
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="refresh" content="0; url='https://www.bradyhartog.com/engineering/engineering.html'"/>
+		<script src='/index.js'></script>
+	</head>
+	<body>
+		<div class='main-nav-container'></div>
+		<div class='modal-container'></div>
+		<img id='artwork' src='assets/artwork-desktop.jpg'>
+	</body>
+	<script>
+		writeHead();
+		use('/global/components/main-nav.html', 'main-nav-container', setSiteSection);
+		use('/global/components/modal.html', 'modal-container', setSiteSection);
+	</script>
 </html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src='/index.js'></script>
+	</head>
+	<body>
+		<div class='main-nav-container'></div>
+		<div class='modal-container'></div>
+		<div class='content'>
+			<div class='gallery'>
+				<div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/engineering/encr-analytics/encr-analytics.html'
+					data-image-src='encr-analytics/assets/cover.jpg'
+					data-label='ENCR Analytics'
+					data-sublabel='Reaction Engineering Intl.'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/engineering/imaging-panel-power-network/imaging-panel-power-network.html'
+					data-image-src='imaging-panel-power-network/assets/cover.jpg'
+					data-label='Imaging Panel Power Network'
+					data-sublabel='Varex Imaging Corp.'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/engineering/inertial-navigation-model/inertial-navigation-model.html'
+					data-image-src='inertial-navigation-model/assets/cover.jpg'
+					data-label='Inertial Navigation Model'
+					data-sublabel='T.D. Williamson, Inc.'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/engineering/mfl-data-visualization/mfl-data-visualization.html'
+					data-image-src='mfl-data-visualization/assets/cover.jpg'
+					data-label='MFL Data Visualization'
+					data-sublabel='T.D. Williamson, Inc.'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/engineering/power-pack-bulletin/power-pack-bulletin.html'
+					data-image-src='power-pack-bulletin/assets/cover.jpg'
+					data-label='Power Pack Bulletin'
+					data-sublabel='T.D. Williamson, Inc.'>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		writeHead();
+		use('/global/components/main-nav.html', 'main-nav-container', setSiteSection);
+		use('/global/components/modal.html', 'modal-container', setSiteSection);
+		use('/global/components/gallery-item.html', 'gallery-item-container', setGalleryItems);
+	</script>
+</html>
