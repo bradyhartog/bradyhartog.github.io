@@ -171,7 +171,7 @@ body {
 }
 
 .gallery {
-	width: calc(100% + 1em);
+	width: calc(100% + 1em + 1px); /* +1px gives margin for rounding error. */
 	margin: -0.5em -0.5em;
 }
 
@@ -283,7 +283,7 @@ body {
 	height: calc(100vh - 3em);
 	min-width: 70em;
 	min-height: 46.667em;
-	margin: 3em auto 0 auto;
+	margin: -1.85em auto 0 auto;
 }
 
 .article-image {
@@ -351,3 +351,15 @@ a:any-link {
 		font-size: 2.564vw;
 	}
 }
+
+/*
+@media screen and (max-aspect-ratio: 6/10) {
+	body {
+		font-size: 3vw;
+	}
+	
+	.gallery {
+		width: 88vw;
+		font-size: 2.564vw;
+	}
+}*/
