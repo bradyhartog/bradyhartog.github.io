@@ -152,6 +152,7 @@ function writeHead() {
 	let stylesheet = document.createElement('link');
 	let favicon = document.createElement('link');
 	let touchIcon = document.createElement('link');
+	let meta = document.createElement('meta');
 	
 	title.innerHTML = 'Brady Hartog';
 	
@@ -166,10 +167,14 @@ function writeHead() {
 	touchIcon.rel = 'apple-touch-icon';
 	touchIcon.href = '/global/images/apple-touch-icon.png';
 	
+	meta.name = 'viewport';
+	meta.content = 'width=device-width, initial-scale=1.0';
+	
 	document.head.appendChild(title);
 	document.head.appendChild(stylesheet);
 	document.head.appendChild(favicon);
 	document.head.appendChild(touchIcon);
+	document.head.appendChild(meta);
 }
 
 /**/
