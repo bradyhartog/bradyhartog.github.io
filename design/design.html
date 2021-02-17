@@ -1,21 +1,70 @@
-<!DOCTYPE HTML>
-<html> 
-    <head> 
-        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-				<link href='index/favicon.png' rel='icon' type='image/x-icon'/>
-				<link rel='apple-touch-icon' href='index/apple-touch-icon.png'>
-        <title>Brady Hartog</title>
-    </head> 
-    
-<body>
-    <div id="text">
-        <div id="hello">
-        <p>Hello.</p>
-        </div>
-    
-        <div id="message">
-        <p>This part of the site is currently under construction. Please check back later!</p> 
-        </div>
-    </div>
-</body> 
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src='/index.js'></script>
+	</head>
+	<body>
+		<div class='main-nav-container'></div>
+		<div class='modal-container'></div>
+		<div class='content'>
+			<div class='gallery'>
+				<div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/design/mark-i-synthesizer-concept/mark-i-synthesizer-concept.html'
+					data-image-src='mark-i-synthesizer-concept/assets/cover.jpg'
+					data-label='Mark I Synthesizer Concept'
+					data-sublabel='Hartog Analog'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/design/proven-revenue-logo/proven-revenue-logo.html'
+					data-image-src='proven-revenue-logo/assets/cover.jpg'
+					data-label='Proven Revenue Logo'
+					data-sublabel='Proven Revenue'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/design/icona-basics-catalog/icona-basics-catalog.html'
+					data-image-src='icona-basics-catalog/assets/cover.jpg'
+					data-label='Icona Basics Catalog'
+					data-sublabel='Icona Dancewear'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/design/business-card-epsilon/business-card-epsilon.html'
+					data-image-src='business-card-epsilon/assets/cover.jpg'
+					data-label='Business Card'
+					data-sublabel='Epsilon Analytics'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/design/campaign-booklet-smcc/campaign-booklet-smcc.html'
+					data-image-src='campaign-booklet-smcc/assets/cover.jpg'
+					data-label='Financial Campaign Booklet'
+					data-sublabel='South Mountain Church'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/design/dream-it-do-it/dream-it-do-it.html'
+					data-image-src='dream-it-do-it/assets/cover.jpg'
+					data-label='Dream It. Do It.'
+					data-sublabel='Utah ACTE'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/design/bm-conference-poster/bm-conference-poster.html'
+					data-image-src='bm-conference-poster/assets/cover.jpg'
+					data-label='B&M Conference Poster'
+					data-sublabel='Utah State Office of Education'>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		writeHead();
+		use('/global/components/main-nav.html', 'main-nav-container', setSiteSection);
+		use('/global/components/modal.html', 'modal-container', setSiteSection);
+		use('/global/components/gallery-item.html', 'gallery-item-container', setGalleryItems);
+	</script>
 </html>

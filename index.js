@@ -52,6 +52,9 @@ function toggleModal() {
 			clearInterval(interval);
 
 			n.style.display = 'none';
+			
+			// Reset the scroll position of the modal content.
+			document.getElementById('modal-content').scrollTop = 0;
 
 			return;
 		}

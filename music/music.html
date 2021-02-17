@@ -1,21 +1,127 @@
-<!DOCTYPE HTML>
-<html> 
-    <head> 
-        <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
-				<link href='index/favicon.png' rel='icon' type='image/x-icon'/>
-				<link rel='apple-touch-icon' href='index/apple-touch-icon.png'>
-        <title>Brady Hartog</title>
-    </head> 
-    
-<body>
-    <div id="text">
-        <div id="hello">
-        <p>Hello.</p>
-        </div>
-    
-        <div id="message">
-        <p>This part of the site is currently under construction. Please check back later!</p> 
-        </div>
-    </div>
-</body> 
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src='/index.js'></script>
+	</head>
+	<body>
+		<div class='main-nav-container'></div>
+		<div class='modal-container'></div>
+		<div class='content'>
+			<p style='color: #232323; text-align: center';>This page is currently in progress.</p>
+			<div class='gallery'>
+				<div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Rain Into Shine'
+					data-sublabel='2021'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Semblance of a Younger Self'
+					data-sublabel='2020'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Ocean to Ocean'
+					data-sublabel='2020'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Variations by Dressler'
+					data-sublabel='2020'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Cascadian Waltz'
+					data-sublabel='2019'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Antigone'
+					data-sublabel='2019'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Rose Garden Sonata'
+					data-sublabel='2019'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Matthew’s Medley'
+					data-sublabel='2019'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Journey of Hers'
+					data-sublabel='2018'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Need Somebody (Cover)'
+					data-sublabel='2017'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Equinox'
+					data-sublabel='2017'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='December'
+					data-sublabel='2016'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Philosopher’s Song'
+					data-sublabel='2015'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Ebony'
+					data-sublabel='2014'>
+				</div><div
+					class='gallery-item-container'
+					data-type='article'
+					data-ref='/music//.html'
+					data-image-src='/global/images/image-placeholder.png'
+					data-label='Ascension'
+					data-sublabel='2013'>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		writeHead();
+		use('/global/components/main-nav.html', 'main-nav-container', setSiteSection);
+		use('/global/components/modal.html', 'modal-container', setSiteSection);
+		use('/global/components/gallery-item.html', 'gallery-item-container', setGalleryItems);
+	</script>
 </html>
