@@ -1,5 +1,5 @@
 body {
-  background-color: #314051;
+  background-color: #F1F3F5;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   -moz-font-size-adjust: none;
   -webkit-font-size-adjust: none;
@@ -19,10 +19,10 @@ body {
   position: fixed;
   width: 100%;
   height: 4em;
-  background-color: rgba(84, 100, 116, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   -webkit-backdrop-filter: blur(0.4em);
   backdrop-filter: blur(0.4em);
-  border-bottom: 0.1em solid #708090;
+  border-bottom: 0.1em solid #CED6DC;
   z-index: 999;
 }
 
@@ -84,15 +84,14 @@ body {
 
 #footer {
   height: 4em;
-  border-top: 0.1em solid #516071;
+  border-top: 0.1em solid #CED6DC;
   line-height: 0;
   margin: 0 1em;
 }
 
 #copyright {
   float: left;
-  font-weight: bold;
-  color: #516071;
+  color: #A8B4BF;
   padding-top: 0.3em;
 }
 
