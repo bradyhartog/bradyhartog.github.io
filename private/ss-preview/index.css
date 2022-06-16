@@ -1,0 +1,161 @@
+:root {
+  --fs: 12pt; /* base font size */
+  --hh: 4em;  /* header height */
+  --lg: linear-gradient(90deg,
+                        rgba(0, 19, 51, 1),
+                        rgba(0, 19, 51, 1) 10%,
+                        rgba(0, 19, 51, 0)); /* landing gradient */
+  --gg: linear-gradient(90deg,
+                        rgba(0, 0, 0, 1),
+                        rgba(0, 0, 0, 1) 25%,
+                        rgba(0, 0, 0, 0) 75%);   /* gallery gradient */
+}
+
+body {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size-adjust: none;
+  -moz-font-size-adjust: none;
+  -webkit-font-size-adjust: none;
+  font-size: var(--fs);
+  color: #ffffff;
+  background-color: #000000;
+  margin: 0;
+}
+
+.content {
+  width: 72em;
+  max-width: calc(100vw - 4em);
+  margin: auto;
+  padding: 0 2em;
+}
+
+#header {
+  position: fixed;
+  width: 100vw;
+  height: var(--hh);
+  background-color: rgba(17, 47, 97, 0.9);
+  -webkit-backdrop-filter: blur(0.4em);
+	backdrop-filter: blur(0.4em);
+  border-bottom: 0.08em solid rgba(255, 255, 255, 0.25);
+  z-index: 999;
+}
+
+#header-logo {
+  position: relative;
+  top: 0.75em;
+  height: 2.5em;
+}
+
+#menu {
+  position: relative;
+  top: 2em;
+  float: right;
+  line-height: 0;
+}
+
+.mi {
+  display: inline;
+  cursor: pointer;
+  padding-left: 1em;
+}
+
+.mi:hover {
+  opacity: 0.5;
+}
+
+#landing {
+  height: 105vh;
+  background-image: var(--lg), url(assets/media/landing.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top: var(--hh);
+}
+
+.caption {
+  width: calc(27.5 * var(--fs));
+  max-width: 80%;
+  margin-top: 3em;
+}
+
+.title {
+  font-size: 3em;
+  font-weight: bold;
+  line-height: 1em;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+.desc {
+  line-height: 1.25em;
+  margin: 1em 0;
+}
+
+#gallery {
+  height: calc(3 * (105vh + var(--hh)));
+}
+
+.gi {
+  width: 100vw;
+  height: 105vh;
+  background-size: auto calc(100vh - var(--hh));
+  background-position: bottom;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top: var(--hh);
+}
+
+#gi1 {
+  background-image: var(--gg), url('assets/media/gallery/signature-reducer.jpg');
+}
+
+#gi2 {
+  background-image: var(--gg), url('assets/media/gallery/muffler-section.jpg');
+}
+
+#gi3 {
+  background-image: var(--gg), url('assets/media/gallery/generator.jpg');
+}
+
+#footer {
+  position: relative;
+  height: calc(100vh - var(--hh));
+  background-image: url(assets/logo/logo-gray.svg);
+  background-size: auto 120vh;
+  background-position: calc(65vw - 60vh) calc(40vh - var(--hh));
+  background-repeat: no-repeat;
+  overflow-y: hidden;
+  padding-top: var(--hh);
+}
+
+#contact {
+  margin-top: 3em;
+}
+
+.cti {
+  line-height: 1.25em;
+  margin: 0.75em 0;
+}
+
+#credits {
+  position: absolute;
+  bottom: 2.25em;
+}
+
+.cdi {
+  color: #606060;
+  line-height: 1.25em;
+  margin: 0.75em 0;
+}
+
+#flag {
+  height: 1.25em;
+  margin-left: 0.1em;
+}
+
+.sp {
+  margin: 0 0.1em;
+}
+
+/* JavaScript scroll to! */
