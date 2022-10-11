@@ -1,138 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Inter:700);
+
+html {
+  font-size: 8pt;
+}
+
 body {
-  background-color: #F1F3F5;
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  -moz-font-size-adjust: none;
-  -webkit-font-size-adjust: none;
-  font-size-adjust: none;
-  font-size: 10pt;
+  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: max(2vh, 1.2rem);
+  font-weight: bold;
+  line-height: 1.25em;
+  letter-spacing: -0.02em;
+  color: #101010;
   margin: 0;
 }
 
-.content {
-  width: 90em;
-  max-width: 100%;
-  margin: auto;
-  padding: 0 1em;
+#content {
+  width: 90vh;
+  max-width: calc(100vw - min(5em, 10vw));
+  min-width: min(54rem, calc(100vw - min(5em, 10vw)));
+  height: max(90vh, calc(100vh - 10vw));
+  min-height: 54rem;
+  margin: min(2.5em, 5vw) auto;
+  padding: 0 min(5vh, 5vw);
 }
 
-#nav {
-  position: fixed;
+#elements {
   width: 100%;
-  height: 4em;
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-backdrop-filter: blur(0.4em);
-  backdrop-filter: blur(0.4em);
-  border-bottom: 0.1em solid #CED6DC;
-  z-index: 999;
+  height: 100%;
+  background-image: url(assets/graphics/art.jpg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-collapse: collapse;
 }
 
-#nav-logo {
-  position: relative;
-  left: 0.35em;
-  top: 0.35em;
-  height: 2.5em;
+td {
+  padding: 0;
 }
 
-#nav-logo-wrapper {
-  position: relative;
-  top: 0.4em;
-  width: 3.2em;
-  height: 3.2em;
-  border-radius: 0.3em;
-  margin: auto;
-}
-
-/* TODO: Uncomment this block when functions are implemented */
-/* #nav-logo-wrapper:hover {
-  background-color: #708090;
-} */
-
-#gallery {
-  width: calc(100% + 1px); /* +1px gives margin for rounding error */
-  padding-top: 5em;
-  padding-bottom: 1em;
-}
-
-.photo-wrapper {
-  position: relative;
-  display: inline-block;
-  width: 18em;
-  height: 18em;
-  border-radius: 0.6em;
-}
-
-/* TODO: Uncomment this block when functions are implemented */
-/* .photo-wrapper:hover {
-  background-color: #516071;
-} */
-
-.photo {
-  position: relative;
-  top: 1em;
-  left: 1em;
-  width: 16em;
-  height: 16em;
-  z-index: 1;
-}
-
-.shadow {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  z-index: 0;
+#header {
+  vertical-align: top;
 }
 
 #footer {
-  height: 4em;
-  border-top: 0.1em solid #CED6DC;
-  line-height: 0;
-  margin: 0 1em;
+  vertical-align: bottom;
+}
+
+#subtitle {
+  text-align: right;
 }
 
 #copyright {
+  text-align: right;
+}
+
+.social-selector {
   float: left;
-  color: #A8B4BF;
-  padding-top: 0.3em;
+  width: 2.5em;
+  height: 2.5em;
+  text-align: center;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  margin: 0 1.125em -0.625em -0.625em;
 }
 
-#footer-logo {
-  float: right;
-  height: 1.2em;
-  padding-top: 0.8em;
+.social-selector:hover {
+  background-color: #e0e0e0;
 }
 
-/* TODO: Implement robust footer */
-/* #footer {
-  width: 100%;
-  height: 6em;
-  background-color: #091019;
-  border-top: 0.1em solid #516071;
-} */
-
-@media screen and (max-width: 920pt) {  /* 920pt = ((90em content) + (2em padding)) * 10pt */
-  .content {
-    width: 72em; /* 4 columns */
-  }
+.social-icon {
+  height: 1.25em;
+  margin-top: 0.625em;
 }
 
-@media screen and (max-width: 740pt) {  /* 740pt = ((72em content) + (2em padding)) * 10pt */
-  .content {
-    width: 54em; /* 3 columns */
-  }
-}
-
-@media screen and (max-width: 560pt) {  /* 560pt = ((54em content) + (2em padding)) * 10pt */
-  .content {
-    width: 36em; /* 2 columns */
-  }
-}
-
-@media screen and (max-aspect-ratio: 3/4), (max-width: 380pt) {  /* 380pt = ((36em content) + (2em padding)) * 10pt */
-  body {
-    font-size: 2.631vw; /* mobile mode */
-  }
-
-  .content {
-    width: 36em; /* 2 columns */
-  }
+#linkedin {
+  height: calc(1.25em * 0.95);
+  margin-top: calc(0.625em + 1.25em * 0.025);
 }
