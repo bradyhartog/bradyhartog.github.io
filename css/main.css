@@ -1,3 +1,4 @@
+@import url('satoshi.css');
 @import url(http://fonts.googleapis.com/css?family=Inter:700);
 
 html {
@@ -5,12 +6,12 @@ html {
 }
 
 body {
-  font-family: 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Satoshi-Variable', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: max(2vh, 1.2rem);
   font-weight: bold;
   line-height: 1.25em;
   letter-spacing: -0.02em;
-  color: #101010;
+  color: #000000;
   margin: 0;
 }
 
@@ -27,7 +28,7 @@ body {
 #elements {
   width: 100%;
   height: 100%;
-  background-image: url(assets/graphics/art.jpg);
+  background-image: url(../assets/graphics/art.jpg);
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
