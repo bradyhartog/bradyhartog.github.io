@@ -1,0 +1,56 @@
+@import url('satoshi.css');
+@import url(http://fonts.googleapis.com/css?family=Inter:700);
+
+html {
+  font-size: 8pt;
+}
+
+body {
+  font-family: 'Satoshi-Variable', 'Inter', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: #F2F2F2;
+  color: #0F0F0F;
+  margin: 0;
+}
+
+#content {
+  width: 70em;
+  max-width: calc(100vw - 4em);
+  margin: 5em auto;
+}
+
+.page-title {
+  font-size: 2.5em;
+  font-weight: bold;
+  line-height: 0;
+  letter-spacing: -0.02em;
+  margin-bottom: 2.5em;
+}
+
+.heading {
+  font-size: 1.75em;
+  font-weight: bold;
+  line-height: 0;
+  letter-spacing: -0.02em;
+  margin-bottom: 5em;
+}
+
+.specimen-label {
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #4F4F4F;
+}
+
+.specimen-gallery {
+  line-height: 0;
+  margin-bottom: 10em;
+}
+
+.specimen-gallery-item {
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+#logo {
+  height: 2.5em;
+}
